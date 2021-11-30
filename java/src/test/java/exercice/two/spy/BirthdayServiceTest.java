@@ -58,18 +58,15 @@ public class BirthdayServiceTest {
 	
 	@Test
 	public void greeting_happy_birthday() throws Exception {
-		
-		FakeClientRepository fakeClientRepository = new FakeClientRepository();
 		//Setup
-		Mockito.when(clientRepository.birthdayIsTodayFor("Alex")).thenReturn(true);
-		
+		FakeClientRepository fakeClientRepository = new FakeClientRepository();
 		fakeClientRepository.setBirthdayFor("Alex");
 		
 		//Test
 		service.greeting("Alex");
 		
 		//Assert
-		Mockito.verify(mailer).send("Happy birthday Alex!");
+		Assertions.assertThat(fakeClientRepository.birthdayIsTodayFor("Alex")).isTrue();
 		
 	}
 	
