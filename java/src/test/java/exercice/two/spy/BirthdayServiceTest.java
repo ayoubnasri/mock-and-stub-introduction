@@ -57,7 +57,7 @@ public class BirthdayServiceTest {
 	}
 	
 	@Test
-	public void greeting_happy_birthday() throws Exception {
+	public void check_birthdayIsTodayFor() throws Exception {
 		//Setup
 		FakeClientRepository fakeClientRepository = new FakeClientRepository();
 		fakeClientRepository.setBirthdayFor("Alex");
