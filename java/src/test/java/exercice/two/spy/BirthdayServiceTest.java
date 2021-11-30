@@ -20,7 +20,7 @@ public class BirthdayServiceTest {
 		
 		service.greeting("Fred");
 		
-		Mockito.verify(mailer).send("Good morning Fred");
+		Mockito.verify(mailer).send("Good morning Fred.");
 		
 	}
 	
