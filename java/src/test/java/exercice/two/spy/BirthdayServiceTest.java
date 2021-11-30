@@ -61,6 +61,7 @@ public class BirthdayServiceTest {
 		//Setup
 		FakeClientRepository fakeClientRepository = new FakeClientRepository();
 		fakeClientRepository.setBirthdayFor("Alex");
+		BirthdayService service = new BirthdayService(fakeClientRepository, mailer); 
 		
 		//Test
 		service.greeting("Alex");
