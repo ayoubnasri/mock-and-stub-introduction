@@ -69,6 +69,7 @@ public class BirthdayServiceTest {
 		//Assert
 		Assertions.assertThat(fakeClientRepository.birthdayIsTodayFor("Alex")).isTrue();
 		Mockito.verify(mailer).send("Happy birthday Alex!");
+		Mockito.verify(mailer).send("Happy birthday Alex!");
 	}
 	
   
