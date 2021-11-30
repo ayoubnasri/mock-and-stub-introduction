@@ -25,10 +25,11 @@ public class BirthdayServiceTest {
 	@Test
 	public void check_greeting_happy_birthday() throws Exception {
 		Mockito.when(clientRepository.birthdayIsTodayFor("Alex")).thenReturn(true);
-		//Test
 		
+		//Test
 		String result = service.greeting("Alex");
 		
+		//Assert
 		Assertions.assertThat(result).isEqualTo("Happy birthday Alex!");
 		
 	}
