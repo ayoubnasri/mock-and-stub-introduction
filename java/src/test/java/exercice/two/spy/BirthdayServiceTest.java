@@ -4,7 +4,6 @@ import org.junit.Test;
 import org.mockito.Mockito;
 
 import clients.ClientRepository;
-import exercice.one.stub.BirthdayService;
 import notification.Mailer;
 
 public class BirthdayServiceTest {
