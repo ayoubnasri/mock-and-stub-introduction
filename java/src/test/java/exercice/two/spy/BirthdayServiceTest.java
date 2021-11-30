@@ -14,9 +14,7 @@ public class BirthdayServiceTest {
 	
 	
 	@Test
-	public void testName() throws Exception {
-		
-		
+	public void check_greeting_good_morning() throws Exception {
 		
 		service.greeting("Fred");
 		
