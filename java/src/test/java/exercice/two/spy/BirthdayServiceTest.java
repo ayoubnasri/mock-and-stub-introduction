@@ -2,6 +2,7 @@ package exercice.two.spy;
 
 import static org.junit.Assert.*;
 
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.mockito.Mockito;
 
@@ -42,7 +43,16 @@ public class BirthdayServiceTest {
 	
 	@Test
 	public void greeting_good_morning() throws Exception {
-		
+
+        FakeMailer fakeMailer = new FakeMailer();
+
+        Mockito.when(clientRepository.birthdayIsTodayFor("Alex")).thenReturn(true);
+        BirthdayService service = new BirthdayService(clientRepository, fakeMailer);
+
+        //Test
+        service.greeting("Alex");
+
+        Assertions.assertThat(fakeMailer.sentMessage).isEqualTo("Happy birthday Alex!");
 		
 		
 	}
