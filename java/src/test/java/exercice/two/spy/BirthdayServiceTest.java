@@ -44,6 +44,9 @@ public class BirthdayServiceTest {
 	@Test
 	public void greeting_good_morning() throws Exception {
 
+        Mailer fakeMailer = new Mailer() {
+            
+        }
 
         Assertions.assertThat(fakeMailer.sentMessage).isEqualTo("Happy birthday Alex!");
 		
