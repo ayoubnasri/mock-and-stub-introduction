@@ -54,7 +54,6 @@ public class BirthdayServiceTest {
 
         Assertions.assertThat(fakeMailer.sentMessage).isEqualTo("Happy birthday Alex!");
 		
-		
 	}
 	
   
