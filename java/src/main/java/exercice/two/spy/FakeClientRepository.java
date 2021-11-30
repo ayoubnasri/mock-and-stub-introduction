@@ -13,9 +13,7 @@ public class FakeClientRepository extends ClientRepository{
 	
 	@Override
 	public boolean birthdayIsTodayFor(String name) {
-		
 		return this.birthdayFor.equals(name);
-		
 	}
 
 }
