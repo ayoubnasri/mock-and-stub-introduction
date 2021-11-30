@@ -1,2 +1,6 @@
-package exercice.two.spy;public class FakeMailer {
+package exercice.two.spy;
+
+import notification.Mailer;
+
+public class FakeMailer extends Mailer {
 }
