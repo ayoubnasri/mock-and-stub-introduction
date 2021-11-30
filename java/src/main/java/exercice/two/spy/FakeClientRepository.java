@@ -1,5 +1,9 @@
 package exercice.two.spy;
 
-public class FakeClientRepository {
+import clients.ClientRepository;
+
+public class FakeClientRepository extends ClientRepository{
+	
+	
 
 }
