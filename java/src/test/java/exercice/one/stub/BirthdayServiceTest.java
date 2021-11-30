@@ -36,7 +36,7 @@ public class BirthdayServiceTest {
 		
 		String result = service.greeting("Alex");
 		
-		Assertions.assertThat(result).isEqualTo("Good morning fred.");
+		Assertions.assertThat(result).isEqualTo("Happy birthday Alex!");
 		
 	}
   
