@@ -16,8 +16,10 @@ public class BirthdayServiceTest {
 	@Test
 	public void check_greeting_good_morning() throws Exception {
 		
+		//Test
 		service.greeting("Fred");
 		
+		//Assert
 		Mockito.verify(mailer).send("Good morning Fred.");
 		
 	}
@@ -28,8 +30,10 @@ public class BirthdayServiceTest {
 		//Setup
 		Mockito.when(clientRepository.birthdayIsTodayFor("Alex")).thenReturn(true);
 		
+		//Test
 		service.greeting("Alex");
 		
+		//Assert
 		Mockito.verify(mailer).send("Happy birthday Alex!");
 		
 	}
