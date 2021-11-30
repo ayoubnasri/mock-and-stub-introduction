@@ -1,5 +1,7 @@
 package exercice.two.spy;
 
+import static org.junit.Assert.*;
+
 import org.junit.Test;
 import org.mockito.Mockito;
 
@@ -35,6 +37,12 @@ public class BirthdayServiceTest {
 		
 		//Assert
 		Mockito.verify(mailer).send("Happy birthday Alex!");
+		
+	}
+	
+	@Test
+	public void greeting_good_morning() throws Exception {
+		
 		
 	}
 	
