@@ -23,7 +23,7 @@ public class BirthdayServiceTest {
 	}
 	
 	@Test
-	public void check_greeting() throws Exception {
+	public void check_greeting_happy_birthday() throws Exception {
 		Mockito.when(clientRepository.birthdayIsTodayFor("Alex")).thenReturn(true);
 		//Test
 		
