@@ -56,6 +56,19 @@ public class BirthdayServiceTest {
 		
 	}
 	
+	@Test
+	public void greeting_happy_birthday() throws Exception {
+		//Setup
+		Mockito.when(clientRepository.birthdayIsTodayFor("Alex")).thenReturn(true);
+		
+		//Test
+		service.greeting("Alex");
+		
+		//Assert
+		Mockito.verify(mailer).send("Happy birthday Alex!");
+		
+	}
+	
   
   
 
