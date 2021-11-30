@@ -4,4 +4,7 @@ import notification.Mailer;
 
 public class FakeMailer extends Mailer {
 
+    public String sentMessage;
+
+
 }
