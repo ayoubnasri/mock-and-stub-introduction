@@ -44,7 +44,7 @@ public class BirthdayServiceTest {
 	@Test
 	public void greeting_good_morning() throws Exception {
 
-        Mailer fakeMailer = new FakeMailer();
+        FakeMailer fakeMailer = new FakeMailer();
 
         Mockito.when(clientRepository.birthdayIsTodayFor("Alex")).thenReturn(true);
         BirthdayService service = new BirthdayService(clientRepository, fakeMailer);
