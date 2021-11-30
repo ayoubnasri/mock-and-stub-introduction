@@ -27,7 +27,7 @@ public class BirthdayServiceTest {
 		
 		String result = service.greeting("fred");
 		
-		Assertions.assertThat(result).isEqualTo("sdfhbj");
+		Assertions.assertThat(result).isEqualTo("Good morning fred.");
 		
 	}
   
