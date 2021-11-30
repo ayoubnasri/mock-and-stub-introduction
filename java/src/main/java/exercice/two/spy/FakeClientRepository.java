@@ -10,5 +10,10 @@ public class FakeClientRepository extends ClientRepository{
 	public void setBirthdayFor(String name) {
 		this.birthdayFor = name ; 
 	}
+	
+	@Override
+	public boolean birthdayIsTodayFor(String name) {
+		
+	}
 
 }
