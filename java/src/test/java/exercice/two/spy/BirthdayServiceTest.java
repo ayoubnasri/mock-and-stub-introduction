@@ -10,13 +10,14 @@ import notification.Mailer;
 public class BirthdayServiceTest {
 	
 	ClientRepository clientRepository = Mockito.mock(ClientRepository.class);
-	BirthdayService service = new BirthdayService(clientRepository);
+	Mailer mailer = Mockito.mock(Mailer.class);
+	BirthdayService service = new BirthdayService(clientRepository,mailer);
 	
 	
 	@Test
 	public void testName() throws Exception {
 		
-		Mailer mailer = Mockito.mock(Mailer.class);
+		
 		
 		service.greeting("Fred");
 		
