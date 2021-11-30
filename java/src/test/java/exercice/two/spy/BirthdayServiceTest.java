@@ -45,7 +45,7 @@ public class BirthdayServiceTest {
 	public void greeting_good_morning() throws Exception {
 
 
-        Assertions.assertThat(mailer.sentMessage).isEqualTo("Happy birthday Alex!");
+        Assertions.assertThat(fakeMailer.sentMessage).isEqualTo("Happy birthday Alex!");
 		
 	}
 	
