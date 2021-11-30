@@ -58,6 +58,8 @@ public class BirthdayServiceTest {
 	
 	@Test
 	public void greeting_happy_birthday() throws Exception {
+		
+		FakeClientRepository fakeClientRepository = new FakeClientRepository();
 		//Setup
 		Mockito.when(clientRepository.birthdayIsTodayFor("Alex")).thenReturn(true);
 		
