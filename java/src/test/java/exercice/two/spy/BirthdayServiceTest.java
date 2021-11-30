@@ -26,9 +26,9 @@ public class BirthdayServiceTest {
 	@Test
 	public void check_greeting_happy_birthday() throws Exception {
 		
-		service.greeting("Fred");
+		service.greeting("Alex");
 		
-		Mockito.verify(mailer).send("Good morning Fred.");
+		Mockito.verify(mailer).send("Happy birthday Alex!");
 		
 	}
 	
