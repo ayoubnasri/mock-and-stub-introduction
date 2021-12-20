@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class IntervalleAdapter {
 	
-	private int getRandomValue() throws NoSuchAlgorithmException {
+	public int getRandomValue() throws NoSuchAlgorithmException {
 		Random rand = SecureRandom.getInstanceStrong(); 
 		return rand.ints(1, 0, 36).findFirst().getAsInt();
 	}
