@@ -10,6 +10,9 @@ import org.junit.Test;
 public class RouletteServiceTest {
 	
 	RouletteService rouletteService = new RouletteService();
+	
+	TimeOutAdapter timeOutAdapter = new TimeOutAdapter(2) ; 
+	
 
 	@Test
 	public void check_random_number_in_interval() throws Exception {
