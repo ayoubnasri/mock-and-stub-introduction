@@ -30,9 +30,14 @@ public class RouletteService {
 		this.timeOutAdapter = timeOutAdapter;
 	}
 	
-	public int getRandomNumber() throws NoSuchAlgorithmException, InterruptedException {
+	public String getRandomNumber() throws NoSuchAlgorithmException, InterruptedException {
+		
 		timeOutAdapter.getTimeOut();
-		return intervalle.getRandomValue();
+		
+		if(intervalle.getRandomValue()== 37) {
+			return "00";
+		}
+		return String.valueOf(intervalle.getRandomValue());
 
 	}
 
