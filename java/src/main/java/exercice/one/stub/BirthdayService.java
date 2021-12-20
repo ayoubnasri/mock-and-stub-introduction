@@ -4,7 +4,7 @@ import clients.ClientRepository;
 
 public class BirthdayService {
 
-	private ClientRepository repository;
+	public ClientRepository repository;
 
 	 BirthdayService(ClientRepository repository) {
 		this.repository = repository;
