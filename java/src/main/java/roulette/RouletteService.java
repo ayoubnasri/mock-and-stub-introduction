@@ -44,17 +44,22 @@ public class RouletteService {
 
 	public String getcolor() {
 		boolean randomNumber;
+		
 		try {
-			randomNumber = Math.floorMod(Integer.parseInt(getRandomNumber()), 2)==0;
-			if (randomNumber) {
-				return "noir";
-			} else {
-				return "rouge";
+			if (Integer.parseInt(getRandomNumber())==0) {
+				return "vert";
+			}else {
+				randomNumber = Math.floorMod(Integer.parseInt(getRandomNumber()), 2)==0;
+				if (randomNumber) {
+					return "noir";
+				} else {
+					return "rouge";
+				}
 			}
 		} catch (NumberFormatException | NoSuchAlgorithmException | InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+
 		}
+		
 		return null;
 	}
 
