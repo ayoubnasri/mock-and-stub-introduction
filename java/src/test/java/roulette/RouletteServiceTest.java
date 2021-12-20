@@ -37,8 +37,6 @@ public class RouletteServiceTest {
 		
 	}
 	
-	
-	}
 	@Test
 	public void testTimeOut() throws InterruptedException, NoSuchAlgorithmException {
 		
