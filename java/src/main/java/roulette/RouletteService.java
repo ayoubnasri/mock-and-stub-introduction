@@ -6,7 +6,11 @@ import java.util.Random;
 
 public class RouletteService {	
 	
-	TimeOutAdapter timeOutAdapter = new TimeOutAdapter(); 
+	private TimeOutAdapter timeOutAdapter; 
+	
+	public RouletteService(TimeOutAdapter timeOutAdapter) {
+		this.timeOutAdapter = timeOutAdapter;
+	}
 	
 	public int getRandomNumber() throws NoSuchAlgorithmException, InterruptedException {
 
