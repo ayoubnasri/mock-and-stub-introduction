@@ -10,7 +10,7 @@ public class TimeOutAdapterTest  {
 		//setUp
 		
 		//Mockito.doReturn(20).when(timeOutAdapter).getTimeOut();
-		timeOutAdapter = new TimeOutAdapter(20);
+		TimeOutAdapter timeOutAdapter = new TimeOutAdapter(20);
 		//ReflectionTestUtils.setField(timeOutAdapter, "timeOutAdapter", new TimeOutAdapter(20));
 
 		
