@@ -41,6 +41,7 @@ public class RouletteServiceTest {
 	public void check_random_number_reponse_time_ok() throws Exception {
 		//setUp
 		Mockito.doReturn(20).when(timeOutAdapter).getTimeOut();
+		
 		//test
 		long currentTimeBefore = System.currentTimeMillis();
 		int rslt = rouletteService.getRandomNumber();
