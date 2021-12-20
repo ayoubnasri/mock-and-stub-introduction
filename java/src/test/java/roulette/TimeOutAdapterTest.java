@@ -26,7 +26,7 @@ public class TimeOutAdapterTest  {
 		Assertions.assertThat(diffTime).isEqualTo(20);
 		
 	
-	
+	}
 	
 	
 	
