@@ -8,9 +8,9 @@ public class TimeOutAdapterTest  {
 	@Test
 	public void check_random_number_reponse_time_ok() throws Exception {
 		
-		//setUp
-		
+		//setUp		
 		TimeOutAdapter timeOutAdapter = new TimeOutAdapter(20);
+		
 		//test
 		long currentTimeBefore = System.currentTimeMillis();
 		timeOutAdapter.getTimeOut();
