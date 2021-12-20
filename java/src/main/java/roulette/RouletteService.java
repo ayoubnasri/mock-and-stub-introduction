@@ -3,7 +3,7 @@ package roulette;
 public class RouletteService {
 
 	public int getRandomNumber() {
-		return 0;
+		return Math.random();
 	}
 
 }
