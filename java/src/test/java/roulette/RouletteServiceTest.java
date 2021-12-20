@@ -45,8 +45,8 @@ public class RouletteServiceTest {
 		//setUp
 		
 		//Mockito.doReturn(20).when(timeOutAdapter).getTimeOut();
-		//timeOutAdapter = new TimeOutAdapter(20);
-		ReflectionTestUtils.setField(timeOutAdapter, "timeOutAdapter", new TimeOutAdapter(20));
+		timeOutAdapter = new TimeOutAdapter(20);
+		//ReflectionTestUtils.setField(timeOutAdapter, "timeOutAdapter", new TimeOutAdapter(20));
 
 		
 		//test
