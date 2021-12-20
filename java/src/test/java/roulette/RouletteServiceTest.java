@@ -35,7 +35,7 @@ public class RouletteServiceTest {
 	@Test
 	public void testIf_color_is_red() throws NoSuchAlgorithmException, InterruptedException {
 		Mockito.when(intervalleAdapter.getRandomValue()).thenReturn(37);
-		Assertions.assertThat(rouletteService.getcolor()).isEqualTo("Rouge");
+		Assertions.assertThat(rouletteService.getcolor()).isEqualTo("rouge");
 	}
 
 }
