@@ -1,6 +1,7 @@
 package roulette;
 
 import java.security.NoSuchAlgorithmException;
+import java.util.function.IntPredicate;
 
 public class RouletteService {	
 	
@@ -39,6 +40,10 @@ public class RouletteService {
 		}
 		return String.valueOf(intervalle.getRandomValue());
 
+	}
+
+	public String getcolor() {
+		return "rouge";
 	}
 
 	
