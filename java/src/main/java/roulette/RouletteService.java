@@ -8,6 +8,14 @@ public class RouletteService {
 	
 	private TimeOutAdapter timeOutAdapter; 
 	
+	public TimeOutAdapter getTimeOutAdapter() {
+		return timeOutAdapter;
+	}
+
+	public void setTimeOutAdapter(TimeOutAdapter timeOutAdapter) {
+		this.timeOutAdapter = timeOutAdapter;
+	}
+
 	public RouletteService(TimeOutAdapter timeOutAdapter) {
 		this.timeOutAdapter = timeOutAdapter;
 	}
@@ -16,7 +24,6 @@ public class RouletteService {
 
 		timeOutAdapter.getTimeOut();
 		Random rand = SecureRandom.getInstanceStrong(); 
-
 		return rand.ints(1, 0, 36).findFirst().getAsInt();
 
 	}
