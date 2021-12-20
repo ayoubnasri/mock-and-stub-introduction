@@ -43,7 +43,7 @@ public class RouletteServiceTest {
 		long currentTimeAfter = System.currentTimeMillis();
 
 		//assert
-		long diffTime = TimeUnit.MILLISECONDS.toSeconds(currentTimeBefore- currentTimeAfter);
+		long diffTime = TimeUnit.MILLISECONDS.toSeconds(currentTimeAfter - currentTimeBefore);
 		Assertions.assertThat(diffTime).isEqualTo(2);
 		
 	}
