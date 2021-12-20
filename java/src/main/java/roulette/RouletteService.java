@@ -7,6 +7,8 @@ import java.util.concurrent.TimeUnit;
 
 public class RouletteService {	
 	
+	TimeOutAdapter timeOutAdapter; 
+	
 	public int getRandomNumber(int timeout) throws NoSuchAlgorithmException, InterruptedException {
 
 		getTimeOut(timeout);
