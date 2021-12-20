@@ -13,7 +13,7 @@ public class RouletteServiceTest {
 	
 
 	@Test
-	public void testName() throws Exception {
+	public void check_random_number_ok() throws Exception {
 		//setUp
 		RouletteService rouletteService = new RouletteService();
 		
