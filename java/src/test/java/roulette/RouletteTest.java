@@ -10,7 +10,8 @@ public class RouletteTest {
 		//setUp
 		
 		//test
-		
+		int randomNumber = r.ints(1, 0, 37).findFirst().getAsInt();
+		asser
 		//assert
 		
 		
