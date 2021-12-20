@@ -7,9 +7,11 @@ import java.util.concurrent.TimeUnit;
 
 public class RouletteService {
 
+	int timeout = 20;
+	
+	
 	public int getRandomNumber() throws NoSuchAlgorithmException, InterruptedException {
 
-		int timeout = 20;
 		TimeUnit.SECONDS.sleep(timeout);
 		Random rand = SecureRandom.getInstanceStrong(); 
 
