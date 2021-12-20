@@ -6,8 +6,9 @@ import java.util.Random;
 
 import org.junit.Test;
 
-public class RouletteTest {
+public class RouletteServiceTest {
 	
+	RouletteService rouletteService; 
 
 	@Test
 	public void testName() throws Exception {
@@ -15,6 +16,8 @@ public class RouletteTest {
 		
 		//test
 
+		int rslt = rouletteService.getRandomNumber();
+		
 		//assert
 		
 		
