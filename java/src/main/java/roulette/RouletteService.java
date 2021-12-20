@@ -1,8 +1,6 @@
 package roulette;
 
 import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
-import java.util.Random;
 
 public class RouletteService {	
 	
@@ -27,9 +25,12 @@ public class RouletteService {
 	public RouletteService(TimeOutAdapter timeOutAdapter) {
 		this.timeOutAdapter = timeOutAdapter;
 	}
+	public RouletteService(IntervalleAdapter intervalle, TimeOutAdapter timeOutAdapter) {
+		this.intervalle = intervalle;
+		this.timeOutAdapter = timeOutAdapter;
+	}
 	
 	public int getRandomNumber() throws NoSuchAlgorithmException, InterruptedException {
-
 		timeOutAdapter.getTimeOut();
 		return intervalle.getRandomValue();
 
