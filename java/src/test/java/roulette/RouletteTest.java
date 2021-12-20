@@ -16,6 +16,7 @@ public class RouletteTest {
 		//test
 		Random r = new Random();
 		int randomNumber = r.ints(1, 0, 37).findFirst().getAsInt();
+		System.out.print(randomNumber);
 		 assertTrue(randomNumber < 37);
 		//assert
 		
