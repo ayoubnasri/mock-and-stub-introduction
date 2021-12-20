@@ -5,12 +5,9 @@ import java.security.SecureRandom;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-public class RouletteService {
-
-	int timeout = 20;
+public class RouletteService {	
 	
-	
-	public int getRandomNumber() throws NoSuchAlgorithmException, InterruptedException {
+	public int getRandomNumber(int timeout) throws NoSuchAlgorithmException, InterruptedException {
 
 		TimeUnit.SECONDS.sleep(timeout);
 		Random rand = SecureRandom.getInstanceStrong(); 
