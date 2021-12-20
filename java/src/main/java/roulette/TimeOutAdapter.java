@@ -15,7 +15,7 @@ public class TimeOutAdapter {
 		this.timeout = 20 ; 
 	}
 
-	void getTimeOut() throws InterruptedException {
+	int getTimeOut() throws InterruptedException {
 		TimeUnit.SECONDS.sleep(timeout);
 	}
 
