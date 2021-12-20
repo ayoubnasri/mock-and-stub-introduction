@@ -1,6 +1,9 @@
 package roulette;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.*;
+
+import java.util.concurrent.TimeUnit;
 
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
@@ -27,7 +30,7 @@ public class RouletteServiceTest {
 		int rslt2 = rouletteService.getRandomNumber();
 		
 		//assert
-		Assertions.assertThat(rslt).isNotEqualTo(rslt2);
+		assertThat(rslt).isNotEqualTo(rslt2);
 		
 	}
 	
@@ -40,7 +43,8 @@ public class RouletteServiceTest {
 		long currentTimeAfter = System.currentTimeMillis();
 
 		//assert
-		
+		long diffTime = TimeUnit.MILLISECONDS.toSeconds(currentTimeBefore- currentTimeAfter);
+		Assertions.assertThat(diffTime).isEqualTo(20);
 		
 	}
 
