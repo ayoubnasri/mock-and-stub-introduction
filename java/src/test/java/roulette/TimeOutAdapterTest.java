@@ -1,3 +1,4 @@
+package roulette;
 import java.util.concurrent.TimeUnit;
 
 import org.assertj.core.api.Assertions;
@@ -27,11 +28,6 @@ public class TimeOutAdapterTest  {
 		
 	
 	}
-	
-	
-	
-	
-	
 	
 	
 	
