@@ -4,9 +4,6 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.Random;
 
-
-import org.junit.jupiter.api.Assertions;
-import org.junit.Assert;
 import org.junit.Test;
 
 public class RouletteTest {
