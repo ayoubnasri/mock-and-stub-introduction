@@ -2,6 +2,7 @@ package roulette;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.security.NoSuchAlgorithmException;
 import java.util.concurrent.TimeUnit;
 
 import org.assertj.core.api.Assertions;
@@ -39,6 +40,7 @@ public class RouletteServiceTest {
 	
 	@Test
 	public void check_random_number_reponse_time_ok() throws Exception {
+		
 		//setUp
 		Mockito.doReturn(20).when(timeOutAdapter).getTimeOut();
 		
@@ -46,11 +48,18 @@ public class RouletteServiceTest {
 		long currentTimeBefore = System.currentTimeMillis();
 		int rslt = rouletteService.getRandomNumber();
 		long currentTimeAfter = System.currentTimeMillis();
+		
 
 		//assert
 		long diffTime = TimeUnit.MILLISECONDS.toSeconds(currentTimeAfter - currentTimeBefore);
 		Assertions.assertThat(diffTime).isEqualTo(20);
 		
+	}
+	@Test
+	public void testTimeOut() throws InterruptedException, NoSuchAlgorithmException {
+		
+		int rslt = rouletteService.getRandomNumber();
+		Mockito.verify(timeOutAdapter).getTimeOut();
 	}
 
 }
