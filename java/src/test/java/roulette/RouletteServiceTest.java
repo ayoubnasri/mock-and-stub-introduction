@@ -19,7 +19,7 @@ public class RouletteServiceTest {
 	@Test
 	public void check_random_number_in_interval() throws Exception {
 		//setUp
-		
+		Assertions.when(timeOutAdapter.getTimeOut()).thenR
 		//test
 		int rslt = rouletteService.getRandomNumber();
 		
