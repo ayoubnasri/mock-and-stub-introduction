@@ -43,24 +43,18 @@ public class RouletteService {
 	}
 
 	public String getcolor() {
-		boolean randomNumberStr;
-		
-		try {
-			int randomNumberInt = Integer.parseInt(getRandomNumber());
-			if (randomNumberInt==0) {
-				return "vert";
-			}
+		int randomNumberInt = Integer.parseInt(getRandomNumber());
+		if (randomNumberInt==0) {
+			return "vert";
+		}
+		else {
+			boolean randomNumberStr = Math.floorMod(randomNumberInt, 2)==0;
+			if (randomNumberStr) {
+				return "noir";
+			} 
 			else {
-				randomNumberStr = Math.floorMod(randomNumberInt, 2)==0;
-				if (randomNumberStr) {
-					return "noir";
-				} 
-				else {
-					return "rouge";
-				}
+				return "rouge";
 			}
-		} catch (NumberFormatException | NoSuchAlgorithmException | InterruptedException e) {
-			return null;
 		}
 	}
 
