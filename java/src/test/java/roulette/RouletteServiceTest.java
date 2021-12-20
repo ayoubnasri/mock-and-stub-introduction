@@ -42,5 +42,12 @@ public class RouletteServiceTest {
 		rouletteService.getRandomNumber();
 		Mockito.verify(timeOutAdapter).getTimeOut();
 	}
+	
+	@Test
+	public void testIf_random_is_equal00() {
+	
+	}
+		
+	
 
 }

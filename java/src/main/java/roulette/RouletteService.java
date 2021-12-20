@@ -8,6 +8,14 @@ public class RouletteService {
 	
 	private TimeOutAdapter timeOutAdapter; 
 	private IntervalleAdapter intervalle;
+	public IntervalleAdapter getIntervalle() {
+		return intervalle;
+	}
+
+	public void setIntervalle(IntervalleAdapter intervalle) {
+		this.intervalle = intervalle;
+	}
+
 	public TimeOutAdapter getTimeOutAdapter() {
 		return timeOutAdapter;
 	}
@@ -23,7 +31,6 @@ public class RouletteService {
 	public int getRandomNumber() throws NoSuchAlgorithmException, InterruptedException {
 
 		timeOutAdapter.getTimeOut();
-		IntervalleAdapter intervalle = new IntervalleAdapter();
 		return intervalle.getRandomValue();
 
 	}
