@@ -11,14 +11,9 @@ import org.mockito.Mockito;
 public class RouletteServiceTest {
 	
 	
-	
 	TimeOutAdapter timeOutAdapter = Mockito.mock(TimeOutAdapter.class); 
 	IntervalleAdapter  intervalleAdapter =  Mockito.mock(IntervalleAdapter.class);
 	RouletteService rouletteService = new RouletteService(intervalleAdapter, timeOutAdapter);
-	
-
-	
-	
 	
 	@Test
 	public void testTimeOut() throws InterruptedException, NoSuchAlgorithmException {
