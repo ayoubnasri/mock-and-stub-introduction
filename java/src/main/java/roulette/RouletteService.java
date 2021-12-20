@@ -1,15 +1,17 @@
 package roulette;
 
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class RouletteService {
 
-	public int getRandomNumber() {
-
-		Random r = new Random();
+	public int getRandomNumber() throws NoSuchAlgorithmException {
 
 
-		return r.ints(1, 0, 36).findFirst().getAsInt();
+		Random rand = SecureRandom.getInstanceStrong(); 
+
+		return rand.ints(1, 0, 36).findFirst().getAsInt();
 
 	}
 
