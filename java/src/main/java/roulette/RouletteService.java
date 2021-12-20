@@ -47,7 +47,6 @@ public class RouletteService {
 		
 		try {
 			int randomNumberInt = Integer.parseInt(getRandomNumber());
-			
 			if (randomNumberInt==0) {
 				return "vert";
 			}
@@ -55,7 +54,8 @@ public class RouletteService {
 				randomNumberStr = Math.floorMod(randomNumberInt, 2)==0;
 				if (randomNumberStr) {
 					return "noir";
-				} else {
+				} 
+				else {
 					return "rouge";
 				}
 			}
