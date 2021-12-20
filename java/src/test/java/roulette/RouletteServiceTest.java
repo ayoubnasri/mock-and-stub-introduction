@@ -10,7 +10,7 @@ public class RouletteServiceTest {
 	RouletteService rouletteService = new RouletteService();
 
 	@Test
-	public void check_random_number_ok() throws Exception {
+	public void check_random_number_in_interval() throws Exception {
 		//setUp
 		
 		//test
