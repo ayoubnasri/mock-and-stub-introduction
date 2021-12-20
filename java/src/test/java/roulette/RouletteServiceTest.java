@@ -1,12 +1,7 @@
 package roulette;
 
-import static org.junit.Assert.assertTrue;
-
-import java.util.Random;
-
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
-import org.mockito.Mock;
 
 public class RouletteServiceTest {
 	
