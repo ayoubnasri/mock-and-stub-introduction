@@ -16,7 +16,8 @@ public class TimeOutAdapterTest  {
 		
 		//test
 		long currentTimeBefore = System.currentTimeMillis();
-		int rslt = rouletteService.getRandomNumber();
+		timeOutAdapter.getTimeOut();
+		//int rslt = rouletteService.getRandomNumber();
 		long currentTimeAfter = System.currentTimeMillis();
 		
 
