@@ -17,14 +17,6 @@ public class RouletteServiceTest {
 	RouletteService rouletteService = new RouletteService(intervalleAdapter, timeOutAdapter);
 	
 
-	@Test
-	public void check_random_number_in_interval() throws Exception {
-		//setUp
-		//test
-		int rslt = rouletteService.getRandomNumber();
-		//assert
-		Assertions.assertThat(rslt).isBetween(0, 36);
-	}
 	
 	
 	
