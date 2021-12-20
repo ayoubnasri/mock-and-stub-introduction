@@ -23,13 +23,10 @@ public class RouletteService {
 	public int getRandomNumber() throws NoSuchAlgorithmException, InterruptedException {
 
 		timeOutAdapter.getTimeOut();
-		return getRandomValue();
+		return IntervalleAdapter.getRandomValue();
 
 	}
 
-	private int getRandomValue() throws NoSuchAlgorithmException {
-		Random rand = SecureRandom.getInstanceStrong(); 
-		return rand.ints(1, 0, 36).findFirst().getAsInt();
-	}
+	
 
 }
