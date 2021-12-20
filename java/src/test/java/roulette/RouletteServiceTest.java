@@ -1,7 +1,6 @@
 package roulette;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.mock;
 
 import java.util.concurrent.TimeUnit;
 
@@ -13,13 +12,13 @@ public class RouletteServiceTest {
 	
 	RouletteService rouletteService = new RouletteService();
 	
-	TimeOutAdapter timeOutAdapter = mock(TimeOutAdapter.class); 
+	TimeOutAdapter timeOutAdapter = Mockito.mock(TimeOutAdapter.class); 
 	
 
 	@Test
 	public void check_random_number_in_interval() throws Exception {
 		//setUp
-		Assertions.when(timeOutAdapter.getTimeOut()).thenR
+		Mockito.when(timeOutAdapter.getTimeOut()).thenReturn(20);
 		//test
 		int rslt = rouletteService.getRandomNumber();
 		
