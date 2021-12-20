@@ -11,8 +11,7 @@ public class TimeOutAdapter {
 		this.timeout = timeout;
 	}
 
-	public TimeOutAdapter() {
-		this.timeout = 20 ; 
+	public TimeOutAdapter() { 
 	}
 
 	void getTimeOut() throws InterruptedException {
