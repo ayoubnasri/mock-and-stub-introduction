@@ -14,6 +14,7 @@ public class RouletteServiceTest {
 	
 	
 	TimeOutAdapter timeOutAdapter = Mockito.mock(TimeOutAdapter.class); 
+	IntervalleAdapter  intervalleAdapter =  Mockito.mock(IntervalleAdapter.class);
 	RouletteService rouletteService = new RouletteService(timeOutAdapter);
 	
 
