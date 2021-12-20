@@ -36,8 +36,11 @@ public class RouletteServiceTest {
 	}
 	
 	@Test
-	public void testIf_random_is_equal00() {
-	
+	public void testIf_random_is_equal00() throws NoSuchAlgorithmException, InterruptedException {
+		Mockito.when(intervalleAdapter.getRandomValue()).thenReturn(37);
+		Assertions.assertThat(rouletteService.getRandomNumber()).isEqualTo("00");
+		
+		
 	}
 		
 	
