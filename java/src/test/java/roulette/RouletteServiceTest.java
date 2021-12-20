@@ -16,7 +16,7 @@ public class RouletteServiceTest {
 		//setUp
 		
 		//test
-		int rslt = rouletteService.getRandomNumber(0);
+		int rslt = rouletteService.getRandomNumber();
 		
 		//assert
 		Assertions.assertThat(rslt).isBetween(0, 36);
@@ -25,8 +25,8 @@ public class RouletteServiceTest {
 	@Test
 	public void check_random_number_ok() throws Exception {
 		//test
-		int rslt = rouletteService.getRandomNumber(0);
-		int rslt2 = rouletteService.getRandomNumber(0);
+		int rslt = rouletteService.getRandomNumber();
+		int rslt2 = rouletteService.getRandomNumber();
 		
 		//assert
 		assertThat(rslt).isNotEqualTo(rslt2);
@@ -38,7 +38,7 @@ public class RouletteServiceTest {
 		
 		//test
 		long currentTimeBefore = System.currentTimeMillis();
-		int rslt = rouletteService.getRandomNumber(20);
+		int rslt = rouletteService.getRandomNumber();
 		long currentTimeAfter = System.currentTimeMillis();
 
 		//assert
