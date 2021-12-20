@@ -48,8 +48,7 @@ public class RouletteService {
 			return "vert";
 		}
 		else {
-			boolean randomNumberStr = Math.floorMod(randomNumberInt, 2)==0;
-			if (randomNumberStr) {
+			if (Math.floorMod(randomNumberInt, 2)==0) {
 				return "noir";
 			} 
 			else {
