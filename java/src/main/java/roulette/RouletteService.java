@@ -7,6 +7,8 @@ import java.util.Random;
 public class RouletteService {	
 	
 	private TimeOutAdapter timeOutAdapter; 
+	private int min;
+	private int max;
 	
 	public TimeOutAdapter getTimeOutAdapter() {
 		return timeOutAdapter;
