@@ -7,7 +7,7 @@ import java.util.Random;
 public class RouletteService {	
 	
 	private TimeOutAdapter timeOutAdapter; 
-	
+	private IntervalleAdapter intervalle;
 	public TimeOutAdapter getTimeOutAdapter() {
 		return timeOutAdapter;
 	}
@@ -23,7 +23,8 @@ public class RouletteService {
 	public int getRandomNumber() throws NoSuchAlgorithmException, InterruptedException {
 
 		timeOutAdapter.getTimeOut();
-		return IntervalleAdapter.getRandomValue();
+		IntervalleAdapter intervalle = new IntervalleAdapter();
+		return intervalle.getRandomValue();
 
 	}
 
