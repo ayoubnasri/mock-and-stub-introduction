@@ -6,7 +6,7 @@ public class BirthdayService {
 
 	private ClientRepository repository;
 
-	public BirthdayService(ClientRepository repository) {
+	 BirthdayService(ClientRepository repository) {
 		this.repository = repository;
 
 	}
