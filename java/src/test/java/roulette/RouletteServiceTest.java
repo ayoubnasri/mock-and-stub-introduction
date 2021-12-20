@@ -6,12 +6,13 @@ import java.util.concurrent.TimeUnit;
 
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 public class RouletteServiceTest {
 	
 	RouletteService rouletteService = new RouletteService();
 	
-	TimeOutAdapter timeOutAdapter = new TimeOutAdapter(2) ; 
+	TimeOutAdapter timeOutAdapter = Mockito.mock(TimeOutAdapter.class); 
 	
 
 	@Test
