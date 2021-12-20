@@ -1,7 +1,5 @@
 package exercice.two.spy;
 
-import static org.junit.Assert.*;
-
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.mockito.Mockito;
