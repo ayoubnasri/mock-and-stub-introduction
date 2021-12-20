@@ -4,7 +4,9 @@ import java.util.concurrent.TimeUnit;
 
 public class TimeOutAdapter {
 
-	void getTimeOut(int timeout) throws InterruptedException {
+	int timeout; 
+	
+	void getTimeOut() throws InterruptedException {
 		TimeUnit.SECONDS.sleep(timeout);
 	}
 
