@@ -13,7 +13,6 @@ public class RouletteServiceTest {
 	public void check_random_number_ok() throws Exception {
 		//setUp
 		
-		
 		//test
 		int rslt = rouletteService.getRandomNumber();
 		
@@ -22,10 +21,15 @@ public class RouletteServiceTest {
 	}
 	
 	@Test
-	public void testName() throws Exception {
+	public void check_random_number_ko() throws Exception {
 		
 		
 		//test
+		int rslt = rouletteService.getRandomNumber();
+		int rslt2 = rouletteService.getRandomNumber();
+		
+		//assert
+		Assertions.assertThat(rslt).isNotEqualTo(rslt2);
 		
 	}
 	
