@@ -4,6 +4,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.Random;
 
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
 public class RouletteServiceTest {
@@ -19,6 +20,7 @@ public class RouletteServiceTest {
 		int rslt = rouletteService.getRandomNumber();
 		
 		//assert
+		Assertions.assertThat(rslt).isBetween(0, 36);
 		
 		
 		
