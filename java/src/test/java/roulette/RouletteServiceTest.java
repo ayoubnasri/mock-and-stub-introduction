@@ -11,9 +11,10 @@ import org.mockito.Mockito;
 
 public class RouletteServiceTest {
 	
-	RouletteService rouletteService = new RouletteService();
 	
 	
+	TimeOutAdapter timeOutAdapter = Mockito.mock(TimeOutAdapter.class); 
+	RouletteService rouletteService = new RouletteService(timeOutAdapter);
 	
 
 	@Test
@@ -42,7 +43,7 @@ public class RouletteServiceTest {
 	public void check_random_number_reponse_time_ok() throws Exception {
 		
 		//setUp
-		TimeOutAdapter timeOutAdapter = Mockito.mock(TimeOutAdapter.class); 
+		
 		Mockito.doReturn(20).when(timeOutAdapter).getTimeOut();
 		
 		//test
