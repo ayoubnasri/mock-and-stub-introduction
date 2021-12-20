@@ -9,9 +9,9 @@ public class IntervalleAdapterTest {
 	public void check_random_number_ok() throws Exception {
 		
 		//test
-		IntervalleAdapter intervalleAdapter 
-		int rslt = rouletteService.getRandomNumber();
-		int rslt2 = rouletteService.getRandomNumber();
+		IntervalleAdapter intervalleAdapter  = new IntervalleAdapter();
+		int rslt = intervalleAdapter.getRandomValue();
+		int rslt2 = intervalleAdapter.getRandomValue();
 		//assert
 		assertThat(rslt).isNotEqualTo(rslt2);
 		
