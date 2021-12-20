@@ -42,7 +42,13 @@ public class RouletteService {
 
 	}
 
-	public String getcolor() {
+	public String getcolor() throws NumberFormatException, NoSuchAlgorithmException, InterruptedException {
+		boolean randomNumber = Math.floorMod(Integer.parseInt(getRandomNumber()), 2)==0;
+		if (randomNumber) {
+			
+		} else {
+
+		}
 		return "rouge";
 	}
 
