@@ -21,7 +21,7 @@ public class RouletteServiceTest {
 	}
 	
 	@Test
-	public void check_random_number() throws Exception {
+	public void check_random_number_ok() throws Exception {
 		//test
 		int rslt = rouletteService.getRandomNumber();
 		int rslt2 = rouletteService.getRandomNumber();
