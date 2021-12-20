@@ -18,7 +18,7 @@ public class RouletteServiceTest {
 	@Test
 	public void check_random_number_in_interval() throws Exception {
 		//setUp
-		Mockito.when(timeOutAdapter.getTimeOut()).thenReturn(20);
+		
 		//test
 		int rslt = rouletteService.getRandomNumber();
 		
@@ -39,7 +39,8 @@ public class RouletteServiceTest {
 	
 	@Test
 	public void check_random_number_reponse_time_ok() throws Exception {
-		
+		//setUp
+		Mockito.doReturn(20).when(timeOutAdapter).getTimeOut();
 		//test
 		long currentTimeBefore = System.currentTimeMillis();
 		int rslt = rouletteService.getRandomNumber();
