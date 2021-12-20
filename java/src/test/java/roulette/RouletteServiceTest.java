@@ -1,7 +1,5 @@
 package roulette;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import java.security.NoSuchAlgorithmException;
 
 import org.assertj.core.api.Assertions;
@@ -17,7 +15,6 @@ public class RouletteServiceTest {
 	
 	@Test
 	public void testTimeOut() throws InterruptedException, NoSuchAlgorithmException {
-		
 		rouletteService.getRandomNumber();
 		Mockito.verify(timeOutAdapter).getTimeOut();
 	}
@@ -26,8 +23,6 @@ public class RouletteServiceTest {
 	public void testIf_random_is_equal00() throws NoSuchAlgorithmException, InterruptedException {
 		Mockito.when(intervalleAdapter.getRandomValue()).thenReturn(37);
 		Assertions.assertThat(rouletteService.getRandomNumber()).isEqualTo("00");
-		
-		
 	}
 		
 	
