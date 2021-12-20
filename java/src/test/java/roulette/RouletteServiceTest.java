@@ -1,6 +1,7 @@
 package roulette;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.mock;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,7 +13,7 @@ public class RouletteServiceTest {
 	
 	RouletteService rouletteService = new RouletteService();
 	
-	TimeOutAdapter timeOutAdapter = Mockito.mock(TimeOutAdapter.class); 
+	TimeOutAdapter timeOutAdapter = mock(TimeOutAdapter.class); 
 	
 
 	@Test
