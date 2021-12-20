@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 public class TimeOutAdapter {
 
-	int timeout; 
+	int timeout=0; 
 	
 	public TimeOutAdapter(int timeout) {
 		super();
