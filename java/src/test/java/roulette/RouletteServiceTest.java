@@ -40,7 +40,7 @@ public class RouletteServiceTest {
 	@Test
 	public void testTimeOut() throws InterruptedException, NoSuchAlgorithmException {
 		
-		int rslt = rouletteService.getRandomNumber();
+		rouletteService.getRandomNumber();
 		Mockito.verify(timeOutAdapter).getTimeOut();
 	}
 
