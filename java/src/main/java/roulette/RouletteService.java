@@ -9,11 +9,15 @@ public class RouletteService {
 	
 	public int getRandomNumber(int timeout) throws NoSuchAlgorithmException, InterruptedException {
 
-		TimeUnit.SECONDS.sleep(timeout);
+		getTimeOut(timeout);
 		Random rand = SecureRandom.getInstanceStrong(); 
 
 		return rand.ints(1, 0, 36).findFirst().getAsInt();
 
+	}
+
+	private void getTimeOut(int timeout) throws InterruptedException {
+		TimeUnit.SECONDS.sleep(timeout);
 	}
 
 }
