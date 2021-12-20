@@ -47,5 +47,18 @@ public class RouletteServiceTest {
 		Assertions.assertThat(diffTime).isEqualTo(2);
 		
 	}
+	
+	@Test
+	public void check_random_reponse_tiume_ko() throws Exception {
+
+		//test
+		long currentTimeBefore = System.currentTimeMillis();
+		int rslt = rouletteService.getRandomNumber();
+		long currentTimeAfter = System.currentTimeMillis();
+
+		//assert
+		long diffTime = TimeUnit.MILLISECONDS.toSeconds(currentTimeAfter - currentTimeBefore);
+		Assertions.assertThat(diffTime).isNotEqualTo(2);
+	}
 
 }
