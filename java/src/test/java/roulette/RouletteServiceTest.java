@@ -6,9 +6,11 @@ import java.util.Random;
 
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
+import org.mockito.Mock;
 
 public class RouletteServiceTest {
 	
+	@Mock
 	RouletteService rouletteService; 
 
 	@Test
