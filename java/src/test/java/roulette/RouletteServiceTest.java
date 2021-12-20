@@ -10,12 +10,12 @@ import org.mockito.Mock;
 
 public class RouletteServiceTest {
 	
-	@Mock
-	RouletteService rouletteService; 
+	
 
 	@Test
 	public void testName() throws Exception {
 		//setUp
+		RouletteService rouletteService = new RouletteService();
 		
 		//test
 
