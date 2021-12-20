@@ -31,7 +31,6 @@ public class RouletteServiceTest {
 		//test
 		int rslt = rouletteService.getRandomNumber();
 		int rslt2 = rouletteService.getRandomNumber();
-		
 		//assert
 		assertThat(rslt).isNotEqualTo(rslt2);
 		
