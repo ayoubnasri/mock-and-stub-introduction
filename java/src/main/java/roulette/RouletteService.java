@@ -43,14 +43,15 @@ public class RouletteService {
 	}
 
 	public String getcolor() {
-		boolean randomNumber;
+		boolean randomNumberStr;
 		
 		try {
-			if (Integer.parseInt(getRandomNumber())==0) {
+			int randomNumberInt = Integer.parseInt(getRandomNumber());
+			if (randomNumberInt==0) {
 				return "vert";
 			}else {
-				randomNumber = Math.floorMod(Integer.parseInt(getRandomNumber()), 2)==0;
-				if (randomNumber) {
+				randomNumberStr = Math.floorMod(randomNumberInt, 2)==0;
+				if (randomNumberStr) {
 					return "noir";
 				} else {
 					return "rouge";
