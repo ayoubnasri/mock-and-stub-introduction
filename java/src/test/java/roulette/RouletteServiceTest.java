@@ -44,7 +44,7 @@ public class RouletteServiceTest {
 		
 		//setUp
 		
-		Mockito.doReturn(20).when(timeOutAdapter).getTimeOut();
+		//Mockito.doReturn(20).when(timeOutAdapter).getTimeOut();
 		
 		//test
 		long currentTimeBefore = System.currentTimeMillis();
@@ -61,7 +61,7 @@ public class RouletteServiceTest {
 	public void testTimeOut() throws InterruptedException, NoSuchAlgorithmException {
 		
 		int rslt = rouletteService.getRandomNumber();
-		Mockito.verify(rouletteService.timeOutAdapter).getTimeOut();
+		Mockito.verify(timeOutAdapter).getTimeOut();
 	}
 
 }
