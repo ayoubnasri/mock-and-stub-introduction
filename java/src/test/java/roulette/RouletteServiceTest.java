@@ -31,6 +31,17 @@ public class RouletteServiceTest {
 		
 	}
 	
+	@Test
+	public void check_random_number_reponse_time_ok() throws Exception {
+		
+		//test
+		long currentTimeBefore = System.currentTimeMillis();
+		int rslt = rouletteService.getRandomNumber();
+		long currentTimeAfter = System.currentTimeMillis();
 
+		//assert
+		
+		
+	}
 
 }
