@@ -10,12 +10,4 @@ public class Parrot {
     	//throw new RuntimeException("Should be unreachable");
     }
 
-//    protected double getLoadFactor() {
-//        return LOAD_FACTOR;
-//    }
-
-//    protected double getBaseSpeed() {
-//        return BASE_SPEED;
-//    }
-
 }
