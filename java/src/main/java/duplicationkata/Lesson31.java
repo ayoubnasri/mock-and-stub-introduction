@@ -22,7 +22,7 @@ public class Lesson31 extends Song
         break;
       case 3 :
         for (String name : names) {
-          sing("Hello " + name + ", it's nice to meet you.");
+          singPart2(name);
         }
         break;
     }
@@ -33,8 +33,13 @@ private void singPart1(Function<String , Boolean> fn ,String name, String messag
 	if (fn.apply(name)) {
 	    sing(message);
 	  } else {
-	    sing("Hello " + name + ", it's nice to meet you.");
+	    singPart2(name);
 	  }
+}
+
+
+private void singPart2(String name) {
+	sing("Hello " + name + ", it's nice to meet you.");
 }
 
 private boolean isStartWith(String name) {
