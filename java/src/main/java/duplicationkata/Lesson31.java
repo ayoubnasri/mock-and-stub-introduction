@@ -34,7 +34,7 @@ public class Lesson31 extends Song
 
 private void singPart(Function<String , Boolean> fn ,String name, String message) {
 	if (fn.apply(name)) {
-	    sing("Hip Hip Horray! For " + name);
+	    sing(message);
 	  } else {
 	    sing("Hello " + name + ", it's nice to meet you.");
 	  }
