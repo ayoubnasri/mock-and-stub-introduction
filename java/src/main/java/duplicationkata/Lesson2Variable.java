@@ -5,8 +5,8 @@ public class Lesson2Variable extends Song
 	
 	  String refrain = " bottles of beer on the wall"; 
 	  int[] number = {100,99};
-	  public void singBottlesOfBeer()
-	  {
+	  
+	  public void singBottlesOfBeer(){
 		  for (int i : number) {
 			  singRefrain(i);
 		}
