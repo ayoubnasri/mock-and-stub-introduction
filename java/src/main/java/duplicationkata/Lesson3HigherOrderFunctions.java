@@ -5,16 +5,7 @@ public class Lesson3HigherOrderFunctions extends Song
   public void singCheers()
   {
     int number = 2;
-    sing(number + "! ");
-    
-    number = number + 2;
-    sing(number + "! ");
-    
-    number = number + 2;
-    sing(number + "! ");
-    
-    number = number + 2;
-    sing(number + "! ");
+    singRefrain(number);
     
     sing("Who do we appreciate?");
     
@@ -32,6 +23,18 @@ public class Lesson3HigherOrderFunctions extends Song
     
     sing("These are the primes, that we find fine!");
   }
+private void singRefrain(int number) {
+	sing(number + "! ");
+    
+    number = number + 2;
+    sing(number + "! ");
+    
+    number = number + 2;
+    sing(number + "! ");
+    
+    number = number + 2;
+    sing(number + "! ");
+}
   private int getNextPrime(int number)
   {
     switch (number)
