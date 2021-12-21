@@ -6,8 +6,6 @@ public class Lesson2Variable extends Song
   {
     singRefrain(100);
     singRefrain(99);
-    
-   
   }
 
 private void singRefrain(int i1) {
