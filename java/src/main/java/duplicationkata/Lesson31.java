@@ -4,17 +4,12 @@ public class Lesson31 extends Song
 {
   public void singSong(int style, String... names)
   {
-    switch (style)
-    {
+    switch (style) {
       case 1 :
-        for (String name : names)
-        {
-          if (name.startsWith("L"))
-          {
+        for (String name : names) {
+          if (name.startsWith("L")) {
             sing("Hip Hip Horray! For " + name);
-          }
-          else
-          {
+          } else {
             sing("Hello " + name + ", it's nice to meet you.");
           }
         }
