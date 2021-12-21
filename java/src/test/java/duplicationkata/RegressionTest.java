@@ -1,7 +1,6 @@
 package duplicationkata;
 
 import org.approvaltests.Approvals;
-import org.junit.jupiter.api.Test;
 import org.learnwithllew.duplicationkata.Lesson1Straight;
 import org.learnwithllew.duplicationkata.Lesson21;
 import org.learnwithllew.duplicationkata.Lesson2Variable;
