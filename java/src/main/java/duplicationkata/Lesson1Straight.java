@@ -11,14 +11,18 @@ public class Lesson1Straight extends Song
 	
   public void singCatSong()
   {
-    sing("We gave the cat to a little kid");
-    
-    singRefrain();
+    singSong();
     
     sing("We sent the cat out on a boat");
     
     singRefrain();
   }
+
+private void singSong() {
+	sing("We gave the cat to a little kid");
+    
+    singRefrain();
+}
 
 	private void singRefrain() {
 		for (String r:refrains) {
