@@ -6,10 +6,8 @@ public class NorwegianParrot extends Parrot{
     private double voltage;
     
 	public NorwegianParrot(double voltage, boolean isNailed) {
-		super();
 		this.isNailed = isNailed;
         this.voltage = voltage;
-
 	}
 	
 	@Override
