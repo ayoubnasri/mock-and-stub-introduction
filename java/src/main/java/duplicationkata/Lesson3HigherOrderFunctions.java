@@ -12,17 +12,6 @@ public class Lesson3HigherOrderFunctions extends Song
     sing("Who do we appreciate?");
     
     singRefrain(this::getNextPrime, 17);
-    number = 17;
-    sing(number + "! ");
-    
-    number = getNextPrime(number);
-    sing(number + "! ");
-    
-    number = getNextPrime(number);
-    sing(number + "! ");
-    
-    number = getNextPrime(number);
-    sing(number + "! ");
     
     sing("These are the primes, that we find fine!");
   }
