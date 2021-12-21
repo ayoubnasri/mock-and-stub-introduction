@@ -15,6 +15,7 @@ public class Lesson3HigherOrderFunctions extends Song
     
     sing("These are the primes, that we find fine!");
   }
+  
 private void singRefrain(Function<Integer , Integer> fn ,int number) {
 	sing(number + "! ");
     
