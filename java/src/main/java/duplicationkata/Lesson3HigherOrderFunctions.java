@@ -25,7 +25,7 @@ public class Lesson3HigherOrderFunctions extends Song
     
     sing("These are the primes, that we find fine!");
   }
-private void singRefrain(BiFunction<Integer, Integer> fn ,int number) {
+private void singRefrain(BiFunction<Integer, Integer , Integer> fn ,int number) {
 	sing(number + "! ");
     
     number = incremente(number,2);
