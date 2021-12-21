@@ -1,5 +1,7 @@
 package duplicationkata;
 
+import java.util.function.Function;
+
 public class Lesson31 extends Song
 {
   public void singSong(int style, String... names)
@@ -27,7 +29,7 @@ public class Lesson31 extends Song
     }
   }
 
-private void singPart(String name) {
+private void singPart(Function<String, Boolean> fn ,String name, String message) {
 	if (name.startsWith("L")) {
 	    sing("Hip Hip Horray! For " + name);
 	  } else {
