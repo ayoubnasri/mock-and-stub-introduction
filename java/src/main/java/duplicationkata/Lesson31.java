@@ -15,21 +15,16 @@ public class Lesson31 extends Song
         }
         break;
       case 2 :
-        for (String name : names)
-        {
-          if (name.contains("a"))
-          {
+        for (String name : names){
+          if (name.contains("a")) {
             sing(name.toUpperCase() + "! Yay " + name + "!");
-          }
-          else
-          {
+          } else {
             sing("Hello " + name + ", it's nice to meet you.");
           }
         }
         break;
       case 3 :
-        for (String name : names)
-        {
+        for (String name : names) {
           sing("Hello " + name + ", it's nice to meet you.");
         }
         break;
