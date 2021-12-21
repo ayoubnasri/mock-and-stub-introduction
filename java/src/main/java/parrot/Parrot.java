@@ -3,11 +3,9 @@ package parrot;
 public class Parrot {
 
     private ParrotTypeEnum type;
-    private double voltage;
 
     public Parrot(ParrotTypeEnum type, double voltage) {
         this.type = type;
-        this.voltage = voltage;
     }
 
     public double getSpeed() {
