@@ -22,7 +22,7 @@ public class Lesson31 extends Song
         break;
       case 3 :
         for (String name : names) {
-          singPart2(name);
+        	singPart1(this::isFalse, name, null);
         }
         break;
     }
