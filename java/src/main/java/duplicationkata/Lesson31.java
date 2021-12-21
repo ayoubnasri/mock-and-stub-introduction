@@ -16,7 +16,9 @@ public class Lesson31 extends Song
         }
         break;
       case 2 :
-        singSong(names);
+        for (String name : names){
+            singPart1(this::isContains, name, name.toUpperCase() + "! Yay " + name + "!");
+        }
         break;
       case 3 :
         for (String name : names) {
@@ -25,13 +27,6 @@ public class Lesson31 extends Song
         break;
     }
   }
-
-
-private void singSong(String... names) {
-	for (String name : names){
-	    singPart1(this::isContains, name, name.toUpperCase() + "! Yay " + name + "!");
-	}
-}
 
 
 private void singPart1(Function<String , Boolean> fn ,String name, String message) {
