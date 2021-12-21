@@ -7,6 +7,7 @@ public class AfricanParrot extends Parrot{
 
 	public AfricanParrot(int numberOfCoconuts, double voltage, boolean isNailed) {
 		super(null, numberOfCoconuts, voltage, isNailed);
+        this.numberOfCoconuts = numberOfCoconuts;
 	}
 
 	@Override
