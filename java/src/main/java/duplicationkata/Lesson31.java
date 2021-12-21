@@ -33,13 +33,8 @@ private void singPart1(Function<String , Boolean> fn ,String name, String messag
 	if (fn.apply(name)) {
 	    sing(message);
 	  } else {
-	    singPart2(name);
+		  sing("Hello " + name + ", it's nice to meet you.");
 	  }
-}
-
-
-private void singPart2(String name) {
-	sing("Hello " + name + ", it's nice to meet you.");
 }
 
 private boolean isStartWith(String name) {
