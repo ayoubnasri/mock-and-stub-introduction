@@ -1,6 +1,5 @@
 package duplicationkata;
 
-import java.util.function.BiFunction;
 import java.util.function.Function;
 
 public class Lesson3HigherOrderFunctions extends Song
