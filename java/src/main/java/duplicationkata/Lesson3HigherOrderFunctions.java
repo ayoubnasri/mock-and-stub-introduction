@@ -1,6 +1,7 @@
 package duplicationkata;
 
 import java.util.function.BiFunction;
+import java.util.function.Function;
 
 public class Lesson3HigherOrderFunctions extends Song
 {
@@ -10,12 +11,22 @@ public class Lesson3HigherOrderFunctions extends Song
     
     sing("Who do we appreciate?");
     
-    singRefrain(this::getNextPrime, 17);
-  
+    singRefrain(this::incremente, 2);
+    number = 17;
+    sing(number + "! ");
+    
+    number = getNextPrime(number);
+    sing(number + "! ");
+    
+    number = getNextPrime(number);
+    sing(number + "! ");
+    
+    number = getNextPrime(number);
+    sing(number + "! ");
     
     sing("These are the primes, that we find fine!");
   }
-private void singRefrain(BiFunction<Integer, Integer , Integer> fn ,int number) {
+private void singRefrain(Function<Integer , Integer> fn ,int number) {
 	sing(number + "! ");
     
     number = fn.apply(number,2);
@@ -28,8 +39,8 @@ private void singRefrain(BiFunction<Integer, Integer , Integer> fn ,int number) 
     sing(number + "! ");
 }
 
-private int incremente(int number, int incr) {
-	return number + incr;
+private int incremente(int number) {
+	return number + 2;
 }
   private int getNextPrime(int number)
   {
