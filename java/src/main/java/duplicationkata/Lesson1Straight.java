@@ -13,7 +13,7 @@ public class Lesson1Straight extends Song
   public void singCatSong()
   {
 	  for(String s:singPart) {
-		  singSong("We gave the cat to a little kid");
+		  singSong(s);
 	  }
   }
 
