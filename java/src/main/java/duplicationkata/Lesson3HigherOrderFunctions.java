@@ -17,17 +17,19 @@ public class Lesson3HigherOrderFunctions extends Song
   
 private void singRefrain(Function<Integer , Integer> fn ,int number) {
 	
+	number = singPart(fn, number);
+    
+    number = singPart(fn, number);
+    
+    number = singPart(fn, number);
+    
+    number = singPart(fn, number);
+}
+
+private int singPart(Function<Integer, Integer> fn, int number) {
 	number = fn.apply(number);
 	sing(number + "! ");
-    
-    number = fn.apply(number);
-    sing(number + "! ");
-    
-    number = fn.apply(number);
-    sing(number + "! ");
-    
-    number = fn.apply(number);
-    sing(number + "! ");
+	return number;
 }
 
 private int incremente(int number) {
