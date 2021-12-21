@@ -12,7 +12,11 @@ public class Lesson2Variable extends Song {
 	  }
 
 	private void singRefrain(int bottlesNumber) {
-		String[] refrains = {bottlesNumber + refrain, bottlesNumber + " bottles of beer" , "Take one down, pass it around", (bottlesNumber -1) + refrain};
+		String[] refrains = {
+				bottlesNumber + refrain, 
+				bottlesNumber + " bottles of beer" , 
+				"Take one down, pass it around", 
+				(bottlesNumber -1) + refrain};
 		for (String ref : refrains) {
 			sing(ref);
 		}
