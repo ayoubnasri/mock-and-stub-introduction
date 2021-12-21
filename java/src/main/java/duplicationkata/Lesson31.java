@@ -11,26 +11,30 @@ public class Lesson31 extends Song
   {
     switch (style) {
       case 1 :
-          singPart1(this::isStartWith, names, "Hip Hip Horray! For " + name);
+        for (String name : names) {
+          singPart1(this::isStartWith, name, "Hip Hip Horray! For " + name);
+        }
         break;
       case 2 :
-            singPart1(this::isContains, names, name.toUpperCase() + "! Yay " + name + "!");
+        for (String name : names){
+            singPart1(this::isContains, name, name.toUpperCase() + "! Yay " + name + "!");
+        }
         break;
       case 3 :
-        	singPart1(this::isFalse, names, null);
+        for (String name : names) {
+        	singPart1(this::isFalse, name, null);
+        }
         break;
     }
   }
 
 
-private void singPart1(Function<String , Boolean> fn ,String... names, String message) {
-	 for (String name : names) {
-		if (fn.apply(name)) {
-		    sing(message);
-		  } else {
-			  sing("Hello " + name + ", it's nice to meet you.");
-		  }
-	 }
+private void singPart1(Function<String , Boolean> fn ,String name, String message) {
+	if (fn.apply(name)) {
+	    sing(message);
+	  } else {
+		  sing("Hello " + name + ", it's nice to meet you.");
+	  }
 }
 
 private boolean isStartWith(String name) {
