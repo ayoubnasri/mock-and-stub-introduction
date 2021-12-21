@@ -10,10 +10,10 @@ public class Lesson2Variable extends Song
 	    singRefrain(99);
 	  }
 
-	private void singRefrain(int i1) {
-		sing(i1 + refrain);
-	    sing(i1 + " bottles of beer");
+	private void singRefrain(int i) {
+		sing(i + refrain);
+	    sing(i + " bottles of beer");
 	    sing("Take one down, pass it around");  
-	    sing((i1 -1) + refrain);
+	    sing((i -1) + refrain);
 	}
 }
