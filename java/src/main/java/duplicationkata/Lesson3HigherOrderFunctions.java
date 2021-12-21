@@ -7,7 +7,7 @@ public class Lesson3HigherOrderFunctions extends Song
   public void singCheers()
   {
     singRefrain(this::incremente, 0);
-    
+
     sing("Who do we appreciate?");
     
     singRefrain(this::getNextPrime, 13);
@@ -15,11 +15,12 @@ public class Lesson3HigherOrderFunctions extends Song
     sing("These are the primes, that we find fine!");
   }
   
-private void singRefrain(Function<Integer , Integer> fn ,int number) {
+private void singRefrain(Function<Integer , Integer> fn ,int number, String message) {
 	
 	for (int i = 0; i < 4; i++) {
 		number = singPart(fn, number);
 	}
+	sing(message);
 }
 
 private int singPart(Function<Integer, Integer> fn, int number) {
