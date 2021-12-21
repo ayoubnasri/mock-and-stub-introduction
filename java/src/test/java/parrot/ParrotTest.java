@@ -8,13 +8,13 @@ public class ParrotTest {
 
 	@Test
 	public void getSpeedOfEuropeanParrot_Polymorphisme() throws Exception {
-		EuropeanParrot europeanParrot = new EuropeanParrot(null, 0, 0, false);
+		EuropeanParrot europeanParrot = new EuropeanParrot(0, 0, false);
         assertEquals(12.0, europeanParrot.getSpeed(), 0.0);
 	}
 	
 	@Test
     public void getSpeedOfAfricanParrot_With_One_Coconut_Polymorphisme() {
-        AfricanParrot africanParrot = new AfricanParrot(null, 1, 0, false);
+        AfricanParrot africanParrot = new AfricanParrot(1, 0, false);
         assertEquals(3.0, africanParrot.getSpeed(), 0.0);
     }
 	
