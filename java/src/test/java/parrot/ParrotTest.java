@@ -8,7 +8,7 @@ public class ParrotTest {
 
 	@Test
 	public void getSpeedOfEuropeanParrot_Polymorphisme() throws Exception {
-		EuropeanParrot europeanParrot = new EuropeanParrot(0, 0, false);
+		EuropeanParrot europeanParrot = new EuropeanParrot(0, false);
         assertEquals(12.0, europeanParrot.getSpeed(), 0.0);
 	}
 	
