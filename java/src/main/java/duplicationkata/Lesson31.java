@@ -25,11 +25,11 @@ public class Lesson31 extends Song
 
 private void singPart1(Function<String , Boolean> fn ,String... names, String message) {
 	 for (String name : names) {
-	if (fn.apply(name)) {
-	    sing(message);
-	  } else {
-		  sing("Hello " + name + ", it's nice to meet you.");
-	  }
+		if (fn.apply(name)) {
+		    sing(message);
+		  } else {
+			  sing("Hello " + name + ", it's nice to meet you.");
+		  }
 	 }
 }
 
