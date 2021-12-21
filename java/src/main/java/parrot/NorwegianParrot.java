@@ -5,7 +5,7 @@ public class NorwegianParrot extends Parrot{
     private boolean isNailed;
     private double voltage;
     
-	public NorwegianParrot() {
+	public NorwegianParrot(double voltage, boolean isNailed) {
 		super(null);
 		this.isNailed = isNailed;
         this.voltage = voltage;
