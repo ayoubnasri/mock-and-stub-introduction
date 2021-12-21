@@ -7,10 +7,9 @@ import static org.junit.Assert.assertEquals;
 public class ParrotTest {
 
 	@Test
-	public void getSpeedOfEuropeanParrot_() throws Exception {
+	public void getSpeedOfEuropeanParrot_Polymorphisme() throws Exception {
 		EuropeanParrot europeanParrot = new EuropeanParrot(null, 0, 0, false);
         assertEquals(12.0, europeanParrot.getSpeed(), 0.0);
-
 	}
 	
     @Test
