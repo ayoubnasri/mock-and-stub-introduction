@@ -28,9 +28,6 @@ public class Lesson31 extends Song
     }
   }
 
-private boolean isContains(String name) {
-	return name.contains("a");
-}
 
 private void singPart(Function<String , Boolean> fn ,String name, String message) {
 	if (fn.apply(name)) {
@@ -43,4 +40,9 @@ private void singPart(Function<String , Boolean> fn ,String name, String message
 private boolean isStartWith(String name) {
 	return name.startsWith("L");
 }
+
+private boolean isContains(String name) {
+	return name.contains("a");
+}
+
 }
