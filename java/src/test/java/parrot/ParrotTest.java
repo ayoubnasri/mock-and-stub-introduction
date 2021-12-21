@@ -14,9 +14,8 @@ public class ParrotTest {
 	
 	@Test
     public void getSpeedOfAfricanParrot_With_One_Coconut_Polymorphisme() {
-        AfricanParrot africanParrot = new AfricanParrot();
-		Parrot parrot = new Parrot(ParrotTypeEnum.AFRICAN, 1, 0, false);
-        assertEquals(3.0, parrot.getSpeed(), 0.0);
+        AfricanParrot africanParrot = new AfricanParrot(null, 1, 0, false);
+        assertEquals(3.0, africanParrot.getSpeed(), 0.0);
     }
 	
     @Test
