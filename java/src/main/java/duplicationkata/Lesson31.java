@@ -1,6 +1,9 @@
 package duplicationkata;
 
+import java.util.function.BiFunction;
 import java.util.function.Function;
+
+import org.apache.commons.lang3.StringUtils;
 
 public class Lesson31 extends Song
 {
@@ -9,7 +12,7 @@ public class Lesson31 extends Song
     switch (style) {
       case 1 :
         for (String name : names) {
-          singPart(name);
+          singPart(StringUtils::startsWith, name);
         }
         break;
       case 2 :
@@ -29,11 +32,15 @@ public class Lesson31 extends Song
     }
   }
 
-private void singPart(Function<String, Boolean> fn ,String name, String message) {
-	if (name.startsWith("L")) {
+private void singPart(BiFunction<String, String , Boolean> fn ,String name, String message) {
+	if (isStartWith(name)) {
 	    sing("Hip Hip Horray! For " + name);
 	  } else {
 	    sing("Hello " + name + ", it's nice to meet you.");
 	  }
+}
+
+private boolean isStartWith(String name, String start) {
+	return name.startsWith(start);
 }
 }
