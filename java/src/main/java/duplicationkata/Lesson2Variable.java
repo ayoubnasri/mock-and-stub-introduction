@@ -1,7 +1,6 @@
 package duplicationkata;
 
-public class Lesson2Variable extends Song
-{
+public class Lesson2Variable extends Song {
 	
 	  String refrain = " bottles of beer on the wall"; 
 	  int[] number = {100,99};
