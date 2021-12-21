@@ -6,7 +6,7 @@ public class Lesson3HigherOrderFunctions extends Song
 {
   public void singCheers()
   {
-    singRefrain(this::incremente, 2);
+    singRefrain(this::incremente, 0);
     
     sing("Who do we appreciate?");
     
@@ -17,6 +17,7 @@ public class Lesson3HigherOrderFunctions extends Song
   
 private void singRefrain(Function<Integer , Integer> fn ,int number) {
 	
+	number = fn.apply(number);
 	sing(number + "! ");
     
     number = fn.apply(number);
