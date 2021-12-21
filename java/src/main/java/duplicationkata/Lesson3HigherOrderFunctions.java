@@ -17,13 +17,9 @@ public class Lesson3HigherOrderFunctions extends Song
   
 private void singRefrain(Function<Integer , Integer> fn ,int number) {
 	
-	number = singPart(fn, number);
-    
-    number = singPart(fn, number);
-    
-    number = singPart(fn, number);
-    
-    number = singPart(fn, number);
+	for (int i = 0; i < 4; i++) {
+		number = singPart(fn, number);
+	}
 }
 
 private int singPart(Function<Integer, Integer> fn, int number) {
