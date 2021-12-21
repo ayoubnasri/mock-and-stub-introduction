@@ -26,14 +26,17 @@ public class Lesson3HigherOrderFunctions extends Song
 private void singRefrain(int number) {
 	sing(number + "! ");
     
-    number = number + 2;
+    number = incrementeDeux(number);
     sing(number + "! ");
     
-    number = number + 2;
+    number = incrementeDeux(number);
     sing(number + "! ");
     
-    number = number + 2;
+    number = incrementeDeux(number);
     sing(number + "! ");
+}
+private int incrementeDeux(int number) {
+	return number + 2;
 }
   private int getNextPrime(int number)
   {
