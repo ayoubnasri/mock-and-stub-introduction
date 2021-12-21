@@ -2,17 +2,11 @@ package parrot;
 
 public class Parrot {
 
-    private ParrotTypeEnum type;
 
-    public Parrot(ParrotTypeEnum type) {
-        this.type = type;
+    public Parrot() {
     }
 
     public double getSpeed() {
-        switch (type) {
-            default:
-                throw new RuntimeException("Should be unreachable");
-        }
     }
 
     protected double getLoadFactor() {
