@@ -6,6 +6,7 @@ public class EuropeanParrot extends Parrot{
 		super(type, numberOfCoconuts, voltage, isNailed);
 	}
 
+	@Override
 	public double getSpeed() {
 		return getBaseSpeed();
 	}
