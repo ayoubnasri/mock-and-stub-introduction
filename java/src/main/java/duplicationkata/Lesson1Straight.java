@@ -1,7 +1,12 @@
 package duplicationkata;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Lesson1Straight extends Song
 {
+	
+	List<String> listText = new ArrayList();
   public void singCatSong()
   {
     sing("We gave the cat to a little kid");
