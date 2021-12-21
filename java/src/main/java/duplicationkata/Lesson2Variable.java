@@ -5,11 +5,9 @@ public class Lesson2Variable extends Song
   public void singBottlesOfBeer()
   {
     singRefrain(100);
+    singRefrain(99);
     
-    sing("99 bottles of beer on the wall");
-    sing("99 bottles of beer");
-    sing("Take one down, pass it around");
-    sing("98 bottles of beer on the wall");
+   
   }
 
 private void singRefrain(int i1) {
