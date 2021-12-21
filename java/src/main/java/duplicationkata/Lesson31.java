@@ -12,7 +12,8 @@ public class Lesson31 extends Song
     switch (style) {
       case 1 :
         for (String name : names) {
-          singPart(this::isStartWith, name, "Hip Hip Horray! For " + name);
+          String message = "Hip Hip Horray! For " + name;
+		singPart(this::isStartWith, name, message);
         }
         break;
       case 2 :
