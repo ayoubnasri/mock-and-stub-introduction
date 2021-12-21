@@ -5,7 +5,6 @@ public class Lesson3HigherOrderFunctions extends Song
   public void singCheers()
   {
     int number = 2;
-    
     sing(number + "! ");
     
     number = number + 2;
