@@ -7,7 +7,11 @@ public class Lesson31 extends Song
     switch (style) {
       case 1 :
         for (String name : names) {
-          singPart(name);
+          if (name.startsWith("L")) {
+            sing("Hip Hip Horray! For " + name);
+          } else {
+            sing("Hello " + name + ", it's nice to meet you.");
+          }
         }
         break;
       case 2 :
@@ -26,12 +30,4 @@ public class Lesson31 extends Song
         break;
     }
   }
-
-private void singPart(String name) {
-	if (name.startsWith("L")) {
-	    sing("Hip Hip Horray! For " + name);
-	  } else {
-	    sing("Hello " + name + ", it's nice to meet you.");
-	  }
-}
 }
