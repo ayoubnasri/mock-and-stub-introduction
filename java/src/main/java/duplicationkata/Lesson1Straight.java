@@ -1,6 +1,5 @@
 package duplicationkata;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -17,9 +16,9 @@ public class Lesson1Straight extends Song
 	  }
   }
 
+  
 	private void singSong(String s) {
 		sing(s);
-	    
 	    singRefrain();
 	}
 
