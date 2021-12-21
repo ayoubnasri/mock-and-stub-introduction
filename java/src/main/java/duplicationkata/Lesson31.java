@@ -33,7 +33,7 @@ public class Lesson31 extends Song
   }
 
 private void singPart(BiFunction<String, String , Boolean> fn ,String name, String message) {
-	if (isStartWith(name)) {
+	if (isStartWith(name, "L")) {
 	    sing("Hip Hip Horray! For " + name);
 	  } else {
 	    sing("Hello " + name + ", it's nice to meet you.");
