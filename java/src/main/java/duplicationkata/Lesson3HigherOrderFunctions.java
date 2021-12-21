@@ -11,7 +11,7 @@ public class Lesson3HigherOrderFunctions extends Song
     
     sing("Who do we appreciate?");
     
-    singRefrain(this::incremente, 2);
+    singRefrain(this::getNextPrime, 17);
     number = 17;
     sing(number + "! ");
     
