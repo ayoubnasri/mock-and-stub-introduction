@@ -4,10 +4,12 @@ public class Lesson2Variable extends Song
 {
 	
 	  String refrain = " bottles of beer on the wall"; 
+	  int[] number = {100,99};
 	  public void singBottlesOfBeer()
 	  {
-	    singRefrain(100);
-	    singRefrain(99);
+		  for (int i : number) {
+			  singRefrain(i);
+		}
 	  }
 
 	private void singRefrain(int i) {
