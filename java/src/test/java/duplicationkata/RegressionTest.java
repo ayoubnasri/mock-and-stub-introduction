@@ -2,11 +2,6 @@ package duplicationkata;
 
 import org.approvaltests.Approvals;
 import org.junit.Test;
-import duplicationkata.Lesson1Straight;
-import duplicationkata.Lesson21;
-import duplicationkata.Lesson2Variable;
-import duplicationkata.Lesson31;
-import duplicationkata.Lesson3HigherOrderFunctions;
 
 public class RegressionTest
 {
