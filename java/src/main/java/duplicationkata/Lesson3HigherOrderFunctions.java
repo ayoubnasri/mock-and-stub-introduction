@@ -28,13 +28,13 @@ public class Lesson3HigherOrderFunctions extends Song
 private void singRefrain(BiFunction<Integer, Integer , Integer> fn ,int number) {
 	sing(number + "! ");
     
-    number = incremente(number,2);
+    number = fn.apply(number,2);
     sing(number + "! ");
     
-    number = incremente(number);
+    number = fn.apply(number,2);
     sing(number + "! ");
     
-    number = incremente(number);
+    number = fn.apply(number,2);
     sing(number + "! ");
 }
 
