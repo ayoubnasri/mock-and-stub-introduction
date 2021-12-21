@@ -12,7 +12,7 @@ public class Lesson31 extends Song
     switch (style) {
       case 1 :
         for (String name : names) {
-          singPart(StringUtils::startsWith, name);
+          singPart(this::isStartWith, name);
         }
         break;
       case 2 :
@@ -32,15 +32,15 @@ public class Lesson31 extends Song
     }
   }
 
-private void singPart(BiFunction<String, String , Boolean> fn ,String name, String message) {
-	if (isStartWith(name, "L")) {
+private void singPart(Function<String , Boolean> fn ,String name, String message) {
+	if (isStartWith(name)) {
 	    sing("Hip Hip Horray! For " + name);
 	  } else {
 	    sing("Hello " + name + ", it's nice to meet you.");
 	  }
 }
 
-private boolean isStartWith(String name, String start) {
-	return name.startsWith(start);
+private boolean isStartWith(String name) {
+	return name.startsWith("L");
 }
 }
