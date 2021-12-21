@@ -1,5 +1,6 @@
 package exercice.two.spy;
 
+import notification.Mailer;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.mockito.Mockito;
