@@ -12,12 +12,12 @@ public class Lesson31 extends Song
     switch (style) {
       case 1 :
         for (String name : names) {
-          singPart(this::isStartWith, name, "Hip Hip Horray! For " + name);
+          singPart1(this::isStartWith, name, "Hip Hip Horray! For " + name);
         }
         break;
       case 2 :
         for (String name : names){
-            singPart(this::isContains, name, name.toUpperCase() + "! Yay " + name + "!");
+            singPart1(this::isContains, name, name.toUpperCase() + "! Yay " + name + "!");
         }
         break;
       case 3 :
@@ -29,7 +29,7 @@ public class Lesson31 extends Song
   }
 
 
-private void singPart(Function<String , Boolean> fn ,String name, String message) {
+private void singPart1(Function<String , Boolean> fn ,String name, String message) {
 	if (fn.apply(name)) {
 	    sing(message);
 	  } else {
