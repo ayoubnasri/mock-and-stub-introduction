@@ -1,4 +1,4 @@
-package org.learnwithllew.duplicationkata;
+package duplicationkata;
 
 public class Lesson1Straight extends Song
 {
