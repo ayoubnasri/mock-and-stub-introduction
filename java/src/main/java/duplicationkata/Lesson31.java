@@ -1,9 +1,6 @@
 package duplicationkata;
 
-import java.util.function.BiFunction;
 import java.util.function.Function;
-
-import org.apache.commons.lang3.StringUtils;
 
 public class Lesson31 extends Song {
     public void singSong(int style, String... names) {
