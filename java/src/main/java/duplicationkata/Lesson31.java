@@ -17,11 +17,7 @@ public class Lesson31 extends Song
         break;
       case 2 :
         for (String name : names){
-          if (name.contains("a")) {
-            sing(name.toUpperCase() + "! Yay " + name + "!");
-          } else {
-            sing("Hello " + name + ", it's nice to meet you.");
-          }
+            singPart(this::isContains, name, name.toUpperCase() + "! Yay " + name + "!");
         }
         break;
       case 3 :
@@ -31,6 +27,10 @@ public class Lesson31 extends Song
         break;
     }
   }
+
+private boolean isContains(String name) {
+	return name.contains("a");
+}
 
 private void singPart(Function<String , Boolean> fn ,String name, String message) {
 	if (fn.apply(name)) {
