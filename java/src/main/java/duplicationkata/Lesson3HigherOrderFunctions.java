@@ -6,22 +6,12 @@ public class Lesson3HigherOrderFunctions extends Song
 {
   public void singCheers()
   {
-    int number = 2;
-    singRefrain(number);
+    singRefrain(this::incremente, 2);
     
     sing("Who do we appreciate?");
     
-    number = 17;
-    sing(number + "! ");
-    
-    number = getNextPrime(number);
-    sing(number + "! ");
-    
-    number = getNextPrime(number);
-    sing(number + "! ");
-    
-    number = getNextPrime(number);
-    sing(number + "! ");
+    singRefrain(this::getNextPrime, 17);
+  
     
     sing("These are the primes, that we find fine!");
   }
