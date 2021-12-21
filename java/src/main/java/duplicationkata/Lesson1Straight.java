@@ -16,7 +16,6 @@ public class Lesson1Straight extends Song
 		  singSong(s);
 	  }
   }
-
   
 	private void singSong(String s) {
 		sing(s);
