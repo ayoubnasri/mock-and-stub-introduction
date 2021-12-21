@@ -13,9 +13,9 @@ public class Lesson2Variable extends Song
   }
 
 private void singRefrain(int i1) {
-	sing("100 bottles of beer on the wall");
-    sing("100 bottles of beer");
+	sing(i1 + " bottles of beer on the wall");
+    sing(i1 + " bottles of beer");
     sing("Take one down, pass it around");  
-    sing("99 bottles of beer on the wall");
+    sing((i1 -1) +" bottles of beer on the wall");
 }
 }
