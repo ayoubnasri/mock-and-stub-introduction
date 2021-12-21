@@ -2,9 +2,6 @@ package parrot;
 
 public class Parrot {
 
-    public Parrot() {
-    }
-
     public double getSpeed() {
 		return 0;
     	//throw new RuntimeException("Should be unreachable");
