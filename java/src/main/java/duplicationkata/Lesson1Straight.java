@@ -7,7 +7,7 @@ import java.util.List;
 public class Lesson1Straight extends Song
 {
 	
-	List<String> refrain = Arrays.asList("But the cat came back","The very next day","Oh the cat came back", "We thought he was a goner","But the cat came back, he just wouldn't go away");
+	List<String> refrains = Arrays.asList("But the cat came back","The very next day","Oh the cat came back", "We thought he was a goner","But the cat came back, he just wouldn't go away");
 	
   public void singCatSong()
   {
@@ -21,10 +21,8 @@ public class Lesson1Straight extends Song
   }
 
 	private void singRefrain() {
-		sing("But the cat came back");
-	    sing("The very next day");
-	    sing("Oh the cat came back");
-	    sing("We thought he was a goner");
-	    sing("But the cat came back, he just wouldn't go away");
+		for (String r:refrains) {
+			sing(r);
+		}
 	}
 }
