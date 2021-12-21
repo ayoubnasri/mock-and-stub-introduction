@@ -12,18 +12,18 @@ public class Lesson1Straight extends Song
   {
     sing("We gave the cat to a little kid");
     
-    sing("But the cat came back");
-    sing("The very next day");
-    sing("Oh the cat came back");
-    sing("We thought he was a goner");
-    sing("But the cat came back, he just wouldn't go away");
+    singRefrain();
     
     sing("We sent the cat out on a boat");
     
-    sing("But the cat came back");
+    singRefrain();
+  }
+
+private void singRefrain() {
+	sing("But the cat came back");
     sing("The very next day");
     sing("Oh the cat came back");
     sing("We thought he was a goner");
     sing("But the cat came back, he just wouldn't go away");
-  }
+}
 }
