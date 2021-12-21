@@ -4,7 +4,7 @@ public class Parrot {
 
     private ParrotTypeEnum type;
 
-    public Parrot(ParrotTypeEnum type, double voltage) {
+    public Parrot(ParrotTypeEnum type) {
         this.type = type;
     }
 
@@ -13,10 +13,6 @@ public class Parrot {
             default:
                 throw new RuntimeException("Should be unreachable");
         }
-    }
-
-    private double getBaseSpeed(double voltage) {
-        return Math.min(24.0, voltage * getBaseSpeed());
     }
 
     protected double getLoadFactor() {
