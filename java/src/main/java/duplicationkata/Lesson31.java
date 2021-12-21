@@ -18,7 +18,8 @@ public class Lesson31 extends Song
         break;
       case 2 :
         for (String name : names){
-            singPart(this::isContains, name, name.toUpperCase() + "! Yay " + name + "!");
+            String message = name.toUpperCase() + "! Yay " + name + "!";
+			singPart(this::isContains, name, message);
         }
         break;
       case 3 :
