@@ -11,7 +11,9 @@ public class Lesson31 extends Song
   {
     switch (style) {
       case 1 :
-        singRefrain(names);
+        for (String name : names) {
+          singPart1(this::isStartWith, name, "Hip Hip Horray! For " + name);
+        }
         break;
       case 2 :
         for (String name : names){
@@ -20,31 +22,19 @@ public class Lesson31 extends Song
         break;
       case 3 :
         for (String name : names) {
-          singPart2(name);
+          sing("Hello " + name + ", it's nice to meet you.");
         }
         break;
     }
   }
 
 
-private void singRefrain(String... names) {
-	for (String name : names) {
-	  singPart1(this::isStartWith, name, "Hip Hip Horray! For " + name);
-	}
-}
-
-
 private void singPart1(Function<String , Boolean> fn ,String name, String message) {
 	if (fn.apply(name)) {
 	    sing(message);
 	  } else {
-	    singPart2(name);
+	    sing("Hello " + name + ", it's nice to meet you.");
 	  }
-}
-
-
-private void singPart2(String name) {
-	sing("Hello " + name + ", it's nice to meet you.");
 }
 
 private boolean isStartWith(String name) {
